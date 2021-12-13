@@ -1,7 +1,7 @@
 import React from "react";
 
-const Comment = () => {
+const Footer = () => {
   return <div></div>;
 };
 
-export default Comment;
+export default Footer;

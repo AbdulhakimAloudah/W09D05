@@ -1,13 +1,13 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/home";
+import Home from "./components/Home";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import Forgot from "./components/horget";
-import Activated from "./components/activated";
-import PasswordReset from "./components/passwordReset";
-import Posts from "./components/posts";
-import Post from "./components/post";
+import Forgot from "./components/ForgotPass";
+import Activated from "./components/Activated";
+import PasswordReset from "./components/PasswordReset";
+import Posts from "./components/Posts";
+import Post from "./components/Post";
 import { useNavigate } from "react-router-dom";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           path="*"
           element={
             <>
-            
+              <h1>wrong path boy</h1>
               <button onClick={() => navigate("/")}>Home</button>
             </>
           }

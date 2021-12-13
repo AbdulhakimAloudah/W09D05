@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const Posts = () => {
   const navigate = useNavigate();
   const BASE_URL = process.env.REACT_APP_BASE_URL;
-  //   const token = SignIn.token;
   const [error, seterror] = useState(false);
   const [posts, setPosts] = useState([]);
   const getPosts = () => {
@@ -21,9 +20,6 @@ const Posts = () => {
           }
         });
 
-      //   if(result.data.error){
-      //       navigate("/error")
-      //   }
     } catch (error) {
       console.log(error);
     }
@@ -49,11 +45,7 @@ const Posts = () => {
     <div className="home">
       <div className="blog">
         <h1>Blogs</h1>
-        {/* <form onSubmit={newTodo} className="new">
-        <p>New todo:</p>
-        <input type="text" name="todo" />
-        <button type="submit">Add</button>
-      </form> */}
+       
         {error ? (
           <p style={{ marginTop: "50px" }}>Kindly login first to see posts</p>
         ) : null}
@@ -69,7 +61,6 @@ const Posts = () => {
                 />
                 <h2 style={{ display: "inline" }}>{item.desc}</h2>
                 <p>created at {item.createdAt.slice(0, 10)}</p>
-                {/* <button onClick={() => del(item._id)}>x</button> */}
                 <br />
               </div>
             );
