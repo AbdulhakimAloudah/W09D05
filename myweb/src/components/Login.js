@@ -10,7 +10,7 @@ const Login = () => {
     try {
       e.preventDefault();
       const result = await axios.post(
-        `${BASE_URL}/log`,
+        `${BASE_URL}/login`,
         {
           email: e.target.email.value,
           password: e.target.password.value,
