@@ -21,7 +21,7 @@ const Login = () => {
         setErr(result.data.err);
       } else if (result.data.success) {
         console.log("helllllo");
-        navigate("/posts");
+        navigate("/post");
       }
     } catch (error) {
       console.log(error);

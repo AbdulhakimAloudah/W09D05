@@ -11,22 +11,22 @@ const BASE_URL = process.env.REACT_APP_BASE_URL;
 function Home() {
   const [logemail, setLogemail] = useState("");
   const [logpassword, setLogpassword] = useState("");
-  // const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("");
   const register = async () => {
     const result = await axios.post(`${BASE_URL}/signup`, {
       email: logemail,
       password: logpassword,
-      // username: username,
+      username: username,
     });
   };
   return (
     <div className="home">
-      {/* <input
+      <input
         onChange={(e) => {
           setUsername(e.target.value);
         }}
         type="text"
-      /> */}
+      />
       <input
         onChange={(e) => {
           setLogemail(e.target.value);
