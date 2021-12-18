@@ -153,7 +153,7 @@ const Post = () => {
             | {likes}
           </h4>
         </div>
-
+{/* no */}
         <form className="comments_form" onSubmit={sendComment}>
           <div className="commentHead">
             <h3>New Comment</h3>
